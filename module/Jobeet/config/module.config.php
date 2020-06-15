@@ -23,6 +23,9 @@ return array(
     'service_manager' => array(
         'factories' => array(
             'BjyAuthorize\View\UnauthorizedStrategy' => 'Jobeet\View\UnauthorizedStrategy'
+        ),
+        'invokables' => array(
+            'user_auth_events' => 'Jobeet\Listener\UserListener',
         )
     )
 );

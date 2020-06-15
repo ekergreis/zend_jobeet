@@ -215,7 +215,7 @@ return array(
         'factories' => array(
             'admin_navigation' => 'ZfcAdmin\Navigation\Service\AdminNavigationFactory',
             'translator' => 'Zend\Mvc\Service\TranslatorServiceFactory',
-        ),
+        )
     ),
     'translator' => array(
         'locale' => 'fr_FR',

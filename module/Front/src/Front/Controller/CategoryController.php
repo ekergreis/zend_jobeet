@@ -38,7 +38,7 @@ class CategoryController extends JobeetController
                     'category' => $category,
                     'jobs' => $jobs,
                     'paginator' => $paginator,
-                    'id' => $category->idCategory,
+                    'id' => $category->id_category,
                     'slug' => $slug
                 )
             );

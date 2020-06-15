@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/zf-commons/zfc-admin" />
+      <path value="$PROJECT_DIR$/vendor/bjyoungblood/bjy-authorize" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-developer-tools" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zendxml" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zendframework" />
+      <path value="$PROJECT_DIR$/vendor/zf-commons/zfc-user" />
+      <path value="$PROJECT_DIR$/vendor/zf-commons/zfc-base" />
+      <path value="$PROJECT_DIR$/vendor/bjyoungblood/bjy-profiler" />
+      <path value="$PROJECT_DIR$/vendor/snapshotpl/zf-snap-event-debugger" />
+    </include_path>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.3.0" />
 </project>

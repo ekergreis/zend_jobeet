@@ -31,7 +31,28 @@ class Module extends AbstractModule implements ConfigProviderInterface
 
         $eventManager->attach('route', array($this, 'onPreRoute'), 100);
         $moduleRouteListener->attach($eventManager);
+
+        // Appel direct
+        /*
+        $eventManager->getSharedManager()
+            ->attach('ZfcUser\Authentication\Adapter\AdapterChain',
+                'authenticate.success',
+                array($this, 'authSuccess'), 100
+            );
+        */
+
+        // Appel avec classe Listener
+        $userAuthEvent = $e->getApplication()->getServiceManager()->get('user_auth_events');
+        $eventManager->attachAggregate($userAuthEvent);
     }
+
+    /*
+    // Appel direct
+    public function authSuccess($e)
+    {
+        echo $e->getIdentity();
+    }
+    */
 
     public function onPreRoute($e){
         $app      = $e->getTarget();
@@ -79,8 +100,9 @@ class Module extends AbstractModule implements ConfigProviderInterface
                     $flashMessenger = $controller->get('FlashMessenger');
 
                     return $viewModel->setVariable('messages', $flashMessenger->getMessages());
-                }
+                },
             )
+
         );
     }
 

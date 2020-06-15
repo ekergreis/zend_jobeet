@@ -68,7 +68,7 @@ class JobTable
                ->where(
                    array(
                        'id_category = ?' => (int)$idCategory,
-                       'created_at >= ?' => date('Y-m-d H:i:s', time() - 86400 * $nbDays)
+                       // 'created_at >= ?' => date('Y-m-d H:i:s', time() - 86400 * $nbDays)
                    )
                );
     

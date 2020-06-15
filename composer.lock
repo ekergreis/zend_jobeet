@@ -1,9 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
     ],
-    "hash": "9fb1f12a42690c0c6baf6e50ad7b8c3c",
+    "content-hash": "c383b161d50a4152df83951ea134003d",
     "packages": [
         {
             "name": "bjyoungblood/bjy-authorize",
@@ -71,7 +72,8 @@
                 "zf2",
                 "zfc-user"
             ],
-            "time": "2013-06-24 18:15:06"
+            "abandoned": true,
+            "time": "2013-06-24T18:15:06+00:00"
         },
         {
             "name": "bjyoungblood/bjy-profiler",
@@ -117,19 +119,61 @@
                 "zdt",
                 "zf2"
             ],
-            "time": "2014-03-11 13:42:24"
+            "time": "2014-03-11T13:42:24+00:00"
+        },
+        {
+            "name": "snapshotpl/zf-snap-event-debugger",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snapshotpl/ZfSnapEventDebugger.git",
+                "reference": "a37a7059c772530a2d5115957207a81363e3b4bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snapshotpl/ZfSnapEventDebugger/zipball/a37a7059c772530a2d5115957207a81363e3b4bd",
+                "reference": "a37a7059c772530a2d5115957207a81363e3b4bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "zendframework/zend-developer-tools": "dev-master",
+                "zendframework/zend-eventmanager": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ZfSnapEventDebugger": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Witold Wasiczko",
+                    "email": "witold@wasiczko.pl",
+                    "homepage": "http://www.psd2html.pl/"
+                }
+            ],
+            "description": "Event Debugger for Zend Framework 2",
+            "homepage": "https://github.com/snapshotpl/ZfSnapEventDebugger",
+            "keywords": [
+                "debug",
+                "events",
+                "zf2"
+            ],
+            "time": "2016-02-17T09:32:11+00:00"
         },
         {
             "name": "zendframework/zend-developer-tools",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/zendframework/ZendDeveloperTools.git",
+                "url": "https://github.com/zendframework/zend-developer-tools.git",
                 "reference": "763cecf9d68fc0d3765d45847047817a47ecdd4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/ZendDeveloperTools/zipball/763cecf9d68fc0d3765d45847047817a47ecdd4a",
+                "url": "https://api.github.com/repos/zendframework/zend-developer-tools/zipball/763cecf9d68fc0d3765d45847047817a47ecdd4a",
                 "reference": "763cecf9d68fc0d3765d45847047817a47ecdd4a",
                 "shasum": ""
             },
@@ -178,19 +222,20 @@
                 "module",
                 "zf2"
             ],
-            "time": "2014-03-23 05:38:41"
+            "abandoned": "laminas/laminas-developer-tools",
+            "time": "2014-03-23T05:38:41+00:00"
         },
         {
             "name": "zendframework/zendframework",
             "version": "2.2.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/zendframework/zf2.git",
+                "url": "https://github.com/zendframework/zendframework.git",
                 "reference": "5eae447d46b00a280573b94c398b2f46f45a6903"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zf2/zipball/5eae447d46b00a280573b94c398b2f46f45a6903",
+                "url": "https://api.github.com/repos/zendframework/zendframework/zipball/5eae447d46b00a280573b94c398b2f46f45a6903",
                 "reference": "5eae447d46b00a280573b94c398b2f46f45a6903",
                 "shasum": ""
             },
@@ -294,7 +339,8 @@
                 "framework",
                 "zf2"
             ],
-            "time": "2014-03-06 17:27:03"
+            "abandoned": "laminas/laminas-mvc-skeleton",
+            "time": "2014-03-06T17:27:03+00:00"
         },
         {
             "name": "zendframework/zendxml",
@@ -339,7 +385,8 @@
                 "xml",
                 "zf2"
             ],
-            "time": "2014-03-05 22:25:44"
+            "abandoned": "laminas/laminas-xml",
+            "time": "2014-03-05T22:25:44+00:00"
         },
         {
             "name": "zf-commons/zfc-admin",
@@ -392,7 +439,7 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2014-03-16 19:53:18"
+            "time": "2014-03-16T19:53:18+00:00"
         },
         {
             "name": "zf-commons/zfc-base",
@@ -445,7 +492,7 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2013-05-02 12:33:49"
+            "time": "2013-05-02T12:33:49+00:00"
         },
         {
             "name": "zf-commons/zfc-user",
@@ -514,15 +561,11 @@
             "keywords": [
                 "zf2"
             ],
-            "time": "2014-03-24 12:31:32"
+            "time": "2014-03-24T12:31:32+00:00"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "zendframework/zendframework": 0,
@@ -531,10 +574,11 @@
         "zf-commons/zfc-admin": 20,
         "zf-commons/zfc-user": 20
     },
+    "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

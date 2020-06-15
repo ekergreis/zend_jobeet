@@ -39,7 +39,7 @@ echo $this->doctype();
                                                           ->setMinDepth(0)
                                                           ->setPartial(array('breadcrumb', 'Admin'));
             ?>
-            <?php if (count($this->flashMessages) > 0):?>
+            <?php if (isset($this->flashMessages) && count($this->flashMessages) > 0):?>
                 <?php foreach ($this->flashMessages as $messages):?>
                     <?php foreach ($messages as $key => $message):?>
                         <div class="alert alert-<?php echo $key;?>">

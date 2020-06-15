@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bjyoungblood/bjy-authorize" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bjyoungblood/bjy-profiler" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/snapshotpl/zf-snap-event-debugger" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-developer-tools" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zendframework" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zendxml" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zf-commons/zfc-admin" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zf-commons/zfc-base" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zf-commons/zfc-user" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

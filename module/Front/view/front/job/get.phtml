@@ -15,11 +15,11 @@ $this->headLink()->appendStylesheet('/css/job.css');
     </div>
 
     <h4>How to apply?</h4>
-    <p class="how_to_apply"><?php echo $this->escapeHtml($this->job->howToPlay)?></p>
+    <p class="how_to_apply"><?php echo $this->escapeHtml($this->job->how_to_play)?></p>
 
     <div class="meta">
         <?php 
-            $date = date_create($this->job->createdAt);
+            $date = date_create($this->job->created_at);
         ?>
         <small>posted on <?php echo $date->format("d/m/Y");?></small>
     </div>

@@ -14,7 +14,8 @@ use Zend\ModuleManager\ModuleManagerInterface;
 use Zend\Session\Container;
 use Zend\Session\SessionManager;
 
-class Module extends AbstractModule implements ConfigProviderInterface
+// class Module extends AbstractModule implements ConfigProviderInterface
+class Module implements ConfigProviderInterface
 {
 
     protected $serviceManager;
@@ -26,6 +27,20 @@ class Module extends AbstractModule implements ConfigProviderInterface
             $this,
             'onBootstrap'
         ));
+    }
+
+    public function getAutoloaderConfig()
+    {
+        return array(
+            'Zend\Loader\ClassMapAutoloader' => array(
+                __DIR__ . '/autoload_classmap.php',
+            ),
+            'Zend\Loader\StandardAutoloader' => array(
+                'namespaces' => array(
+                    __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
+                ),
+            ),
+        );
     }
 
     public function onBootstrap(Event $e)

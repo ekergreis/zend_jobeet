@@ -1,15 +1,16 @@
 <?php
 return array(
     'modules' => array(
+        // 'ZfSnapEventDebugger',
         'BjyProfiler',
         'ZfcBase',
         'ZfcUser',
-        //'BjyAuthorize',
-        'ZendDeveloperTools',
+        'BjyAuthorize',
         'ZfcAdmin',
+        'Jobeet',
         'Front',
         'Admin',
-        'Jobeet'
+        'ZendDeveloperTools',
     ),
     'module_listener_options' => array(
         'config_glob_paths' => array(

@@ -1,8 +1,8 @@
 <?php
 $dbParams = array(
-    'database'  => 'jobeet',
-    'username'  => 'jobeet',
-    'password'  => 'jobeet',
+    'database'  => 'zf2_jobeet',
+    'username'  => 'root',
+    'password'  => '',
     'hostname'  => 'localhost'
 );
 
