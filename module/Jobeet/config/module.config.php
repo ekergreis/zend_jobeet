@@ -26,6 +26,7 @@ return array(
         ),
         'invokables' => array(
             'user_auth_events' => 'Jobeet\Listener\UserListener',
+            'auth' => 'Zend\Authentication\AuthenticationService',
         )
     )
 );
